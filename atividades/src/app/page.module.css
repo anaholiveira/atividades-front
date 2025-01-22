@@ -5,28 +5,21 @@
   text-align: center;
 }
 
-.subtitulo {
-  color: white;
-  font-family: Nerko One, cursive;
-  font-size: 35px;
+.input {
+  border-radius: 20px;
+  height: 40px;
+  width: 300px;
+  box-shadow: 3px 3px 5px white;
+  font-size: 15px;
+  padding: 2px;
+}
+
+.inputDiv {
+  width: 550px;
+  margin: auto;
   text-align: center;
-  margin: 10px;
-}
-
-.ul {
-  text-align: center;
-  color: white;
-}
-
-.li {
-  margin: 8px;
-  font-weight: bold;
-}
-
-
-.objetos {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 10px auto 5px auto;
+  border: 2px solid var(--cor3);
+  border-radius: 40px;
+  box-shadow: 3px 5px 8px var(--cor3);
+  padding: 15px;
 }

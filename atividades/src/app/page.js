@@ -8,63 +8,63 @@ export default function Lista() {
     const paises = [
         {
             id: 1,
-            nome: 'ana',
-            continente: 'Fusca',
-            populacao: 1975,
+            nome: 'Japão',
+            continente: 'Ásia',
+            populacao: '124 milhões ',
         },
         {
             id: 2,
-            nome: 'b',
-            continente: 'Fusca',
-            populacao: 1975,
+            nome: 'Coreia do Sul ',
+            continente: 'Ásia',
+            populacao: '52 milhões',
         },
         {
             id: 3,
-            nome: 'c',
-            continente: 'Fusca',
-            populacao: 1975,
+            nome: 'Austrália',
+            continente: 'Oceania',
+            populacao: '26,5 milhões',
         },
         {
             id: 4,
-            nome: 'd',
-            continente: 'Fusca',
-            populacao: 1975,
+            nome: 'França',
+            continente: 'Europa',
+            populacao: '67 milhões',
         },
         {
             id: 5,
-            nome: 'e',
-            continente: 'Fusca',
-            populacao: 1975,
+            nome: 'Grécia',
+            continente: 'Europa',
+            populacao: '10,4 milhões',
         },
         {
             id: 6,
-            nome: 'f',
-            continente: 'Fusca',
-            populacao: 1975,
+            nome: 'Estados Unidos',
+            continente: 'América do Norte',
+            populacao: '334 milhões',
         },
         {
             id: 7,
-            nome: 'g',
-            continente: 'Fusca',
-            populacao: 1975,
+            nome: 'Brasil',
+            continente: 'América do Sul',
+            populacao: '216 milhões',
         },
         {
             id: 8,
-            nome: 'h',
-            continente: 'Fusca',
-            populacao: 1975,
+            nome: 'Tailândia',
+            continente: 'Ásia',
+            populacao: '72 milhões',
         },
         {
             id: 9,
-            nome: 'i',
-            continente: 'Fusca',
-            populacao: 1975,
+            nome: 'México',
+            continente: 'América do Norte',
+            populacao: '127 milhões',
         },
         {
             id: 10,
-            nome: 'j',
-            continente: 'Fusca',
-            populacao: 1975,
+            nome: 'Espanha',
+            continente: 'Europa',
+            populacao: '47,7 milhões',
         }
     ];
 
@@ -72,30 +72,30 @@ export default function Lista() {
     const paisesFiltrados = paises.filter(pais => pais.nome.toLowerCase().includes(busca.toLowerCase()));
 
     return (
-        <div className={styles.div}>
-            <h1 className={styles.titulo}>˙⋆ Atividade ⋆˙</h1>
+      <div className={styles.div}>
+        <h1 className={styles.titulo}>˙⋆ Atividade ⋆˙</h1>
 
-            <div className={styles.inputDiv}>
-                <input
-                    className={styles.input}
-                    type="text"
-                    placeholder="Busque pelo nome do país"
-                    value={busca}
-                    onChange={(e) => setBusca(e.target.value)}
-                />
-            </div>
-
-            <div className={styles.cardDiv}>
-                {paisesFiltrados.map(pais => (
-                    <Card
-                        key={pais.id}
-                        nome={` ${pais.id} - ${pais.nome} `}
-                        continente={pais.continente}
-                        populacao={pais.populacao}
-                        imagem={pais.imagem}
-                    />
-                ))}
-            </div>
+        <div className={styles.inputDiv}>
+          <input
+            className={styles.input}
+            type = "text"
+            placeholder = "Busque pelo nome do país"
+            value = {busca}
+            onChange = {(e) => setBusca(e.target.value)}
+          />
         </div>
+
+        <div className={styles.cardDiv}>
+          {paisesFiltrados.map(pais => (
+            <Card
+              key={pais.id}
+              nome={` ${pais.id} - ${pais.nome} `}
+              continente={pais.continente}
+              populacao={pais.populacao}
+              imagem={pais.imagem}
+            />
+            ))}
+        </div>
+      </div>
     );
 }
