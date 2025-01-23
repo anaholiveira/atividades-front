@@ -21,7 +21,7 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: linear-gradient(#FA58AC 30%, #F5A9D0 70%);
+  background: linear-gradient(#FA58AC 10%, #F5A9D0 90%);
   background-repeat: no-repeat;
   min-height: 100vh;
 }

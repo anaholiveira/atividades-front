@@ -1,21 +1,13 @@
-.divCards {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    border: 3px solid black;
-}
-
 .cards {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    width: 300px;
     border: 2px solid var(--cor3);
+    border-radius: 30px;
+    box-shadow: 0 2px 10px 4px var(--cor3);
+    width: 320px;
+    text-align: center;
     margin: 10px;
-    border-radius: 20px;
-    box-shadow: 3px 5px 8px var(--cor3);
+    padding: 10px;
 }
 
 .idNome {
@@ -24,16 +16,52 @@
     font-size: 30px;
 }
 
-.continente {
+.continente, .populacao {
     color: white;
     font-family: Nerko One, cursive;
     margin: 5px;
     font-size: 22px;
 }
 
-.populacao {
-    color: white;
-    font-family: Nerko One, cursive;
-    margin: 5px;
-    font-size: 22px;
+.imagens {
+    border-radius: 20px;
+    box-shadow: 0 2px 10px 1px white;
+    margin: auto;
+}
+
+@media (max-width: 768px) {
+    .cards {
+        width: 310px;
+    }
+    .imagens {
+        height: 120px;
+    }
+}
+
+@media (max-width: 480px) {
+    .cards {
+        width: 290px;
+    }
+    .imagens {
+        width: 180px ;
+        height: 100px;
+    }
+    .idNome {
+        font-size: 26px;
+    }
+}
+  
+@media (max-width: 325px) {
+    .cards {
+        width: 250px;
+    }
+    .imagens {
+      height: 90px;
+    }
+    .idNome {
+        font-size: 25px;
+    }
+    .continente, .populacao {
+        font-size: 18px;
+    }
 }

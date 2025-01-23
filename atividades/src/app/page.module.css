@@ -7,19 +7,58 @@
 
 .input {
   border-radius: 20px;
+  width: 100%;
+  max-width: 350px;
   height: 40px;
-  width: 300px;
   box-shadow: 3px 3px 5px white;
-  font-size: 15px;
+  font-size: 18px;
   padding: 2px;
+  font-family: Nerko One, cursive;
 }
 
-.inputDiv {
-  width: 550px;
+.divInput {
+  width: 100%;
+  max-width: 580px;
   margin: auto;
   text-align: center;
   border: 2px solid var(--cor3);
   border-radius: 40px;
   box-shadow: 3px 5px 8px var(--cor3);
   padding: 15px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.divTotal {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin: 10px;
+}
+
+@media (max-width: 768px) {
+  .divInput {
+    width: 90%;
+  }
+
+  .input {
+    width: 80%;
+    max-width: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .divInput {
+    width: 90%;
+  }
+}
+@media (max-width: 325px) {
+  .divInput {
+    width: 90%;
+  }
+
+  .input {
+    width: 100%;
+    font-size: 12px;
+  }
 }
