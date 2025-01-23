@@ -2,7 +2,6 @@
 import { useState } from 'react';
 import styles from './page.module.css';
 import Card from '@/components/Card';
-import Image from 'next/image';
 
 export default function Lista() {
     const paises = [
