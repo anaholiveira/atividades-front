@@ -77,17 +77,17 @@ export default function Lista() {
         },
         {
             id: 11,
-            nome: 'Nova Zelândia',
-            continente: 'Oceania',
-            populacao: '5,2 milhões',
-            imagem: '/images/novazelandia.jpeg',
+            nome: 'Malásia',
+            continente: 'Ásia',
+            populacao: '35 milhões',
+            imagem: '/images/malasia.jpeg',
         },
         {
             id: 12,
-            nome: 'Indonésia',
+            nome: 'China',
             continente: 'Ásia',
-            populacao: '279,6 milhões',
-            imagem: '/images/indonesia.jpeg',
+            populacao: '1,42 bilhão',
+            imagem: '/images/china.jpeg',
         },
         {
             id: 13,
@@ -98,53 +98,53 @@ export default function Lista() {
         },
         {
             id: 14,
-            nome: 'Rússia',
-            continente: 'Europa/Ásia',
-            populacao: '144,7 milhões',
-            imagem: '/images/russia.jpg',
-        },
-        {
-            id: 15,
-            nome: 'China',
-            continente: 'Ásia',
-            populacao: '1,42 bilhão',
-            imagem: '/images/china.jpeg',
-        },
-        {
-            id: 16,
             nome: 'Canadá',
             continente: 'América do Norte',
             populacao: '40,3 milhões',
             imagem: '/images/canada.jpeg',
         },
         {
-            id: 17,
+            id: 15,
             nome: 'Itália',
             continente: 'Europa',
             populacao: '60,4 milhões',
             imagem: '/images/italia.png',
         },
         {
+            id: 16,
+            nome: 'Nova Zelândia',
+            continente: 'Oceania',
+            populacao: '5,2 milhões',
+            imagem: '/images/novazelandia.jpeg',
+        },
+        {
+            id: 17,
+            nome: 'Indonésia',
+            continente: 'Ásia',
+            populacao: '279,6 milhões',
+            imagem: '/images/indonesia.jpeg',
+        },
+        {
             id: 18,
+            nome: 'Rússia',
+            continente: 'Europa/Ásia',
+            populacao: '144,7 milhões',
+            imagem: '/images/russia.jpg',
+        },
+        {
+            id: 19,
             nome: 'Polônia',
             continente: 'Europa',
             populacao: '38,1 milhões',
             imagem: '/images/polonia.jpg',
         },
         {
-            id: 19,
+            id: 20,
             nome: 'Egito',
             continente: 'África',
             populacao: '111,5 milhões',
             imagem: '/images/egito.jpeg',
         },
-        {
-            id: 20,
-            nome: 'Malásia',
-            continente: 'Ásia',
-            populacao: '35 milhões',
-            imagem: '/images/malasia.jpeg',
-        }
     ];
 
     const [busca, setBusca] = useState('');
@@ -152,7 +152,7 @@ export default function Lista() {
 
     return (
       <div className={styles.divPrincipal}>
-        <h1 className={styles.titulo}>˙⋆ Atividade ⋆˙</h1>
+        <h1 className={styles.titulo}>˙⋆ Países ⋆˙</h1>
 
         <div className={styles.divInput}>
           <input
